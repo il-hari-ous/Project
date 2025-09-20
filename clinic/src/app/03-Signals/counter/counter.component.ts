@@ -8,7 +8,7 @@ import { Component,signal,Signal,computed } from '@angular/core';
   styleUrl: './counter.component.scss'
 })
 export class CounterComponent {
-  count=signal(0);
+  count=signal(5);
   doublecount:Signal<number>=computed(()=>this.count()*2)
 
   increment(){
