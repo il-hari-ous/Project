@@ -1,0 +1,14 @@
+<h2>Todo List ({{ todos.length }})</h2>
+
+<div *ngFor="let todo of todos" class="todo">
+  <h3>Todo Item</h3>
+  <p><strong>User ID:</strong> {{ todo?.userId }}</p>
+  <p><strong>ID:</strong> {{ todo?.id }}</p>
+  <p><strong>Title:</strong> {{ todo?.title }}</p>
+  <p>
+    <strong
+      [ngClass]="todo?.completed ? 'completed' : 'not-completed'">
+      Completed: {{ todo?.completed ? 'Yes' : 'No' }}
+    </strong>
+  </p>
+</div>

@@ -1,0 +1,55 @@
+// Variables
+$primary-color: #2c3e50;
+$secondary-color: #3498db;
+$completed-color: #27ae60;
+$not-completed-color: #e74c3c;
+$bg-color: #f5f5f5;
+$border-radius: 8px;
+$padding: 12px;
+$margin: 10px 0;
+
+// General text
+p {
+  font-size: 16px;
+  color: $primary-color;
+}
+
+// Headings
+h2 {
+  text-align: center;
+  color: $secondary-color;
+  margin-bottom: 20px;
+}
+
+h3 {
+  margin-top: 0;
+}
+
+// Todo container
+.todo {
+  background-color: $bg-color;
+  padding: $padding;
+  margin: $margin 0;
+  border-radius: $border-radius;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+
+  p {
+    margin: 5px 0;
+
+    strong {
+      font-weight: 600;
+    }
+  }
+}
+
+// Dynamic completed / not-completed classes
+.completed {
+  color: $completed-color;
+}
+
+.not-completed {
+  color: $not-completed-color;
+}
+
+// "todo works!" message
+
